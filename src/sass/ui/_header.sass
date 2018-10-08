@@ -4,38 +4,24 @@
   left: 0
   width: 100%
   z-index: 9
-  padding: 20px 0 0
-  // .menu-open
-  //   position: absolute
-  //   left: 20px
-  //   top: 65px
-  //   width: 30px
-  //   height: 30px
-  //   display: none
-  //   z-index: 99
-  //   +r(1100)
-  //     display: block
-  //   +r(767)
-  //     top: 55%
-  //     transform: translate(0, -50%)
-  //   span
-  //     width: 30px
-  //     height: 2px
-  //     margin-top: 10px
-  //     background: $white
-  //     display: block
-  //     &:before, &:after
-  //       content: ''
-  //       width: 30px
-  //       height: 2px
-  //       background: $white
-  //       position: absolute
-  //       left: 0
-  //     &:before
-  //       top: 0
-  //     &:after
-  //       bottom: 8px
+  padding: 15px 0 0
+  +tr
+  z-index: 10
+  &.scroll
+    position: fixed
+    background: $white
+    box-shadow: 2px 2px 24px 0 rgba(0, 0, 0, 0.2)
+    img:first-child
+      display: none
+    img.scroll
+      display: block
+    a
+      color: $black-two
+    ul.none
+      box-shadow: 2px 2px 24px 0 rgba(0, 0, 0, 0.2)
   &__logo
+    img.scroll
+      display: none
   ul
     +center
     justify-content: space-between
@@ -44,8 +30,9 @@
       font-size: 16px
       font-weight: 600
       color: $white
-      padding-bottom: 10px
+      padding-bottom: 15px
       border-bottom: 2px solid transparent
+      display: block
       &:hover
         border-bottom: solid 2px #33ccff
     li
@@ -54,7 +41,7 @@
         visibility: hidden
         opacity: 0
         position: absolute
-        top: 33px
+        top: 36px
         background: $white
         +center-column
         padding: 15px 20px

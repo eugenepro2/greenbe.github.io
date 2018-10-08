@@ -4,3 +4,13 @@ import '../lib/selectize.min.js';
 
 //select
 // $('select').selectize();
+
+
+//header scroll
+$(window).scroll(function(){
+  if($(window).scrollTop() > 100){
+    $('.header').addClass('scroll');
+  } else{
+    $('.header').removeClass('scroll');
+  }
+});
