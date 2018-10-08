@@ -1,1 +1,38 @@
 .intro
+  background-image: url('../img/intro-bg.png')
+  +cover
+  height: 680px
+  padding-top: 150px
+  position: relative
+  h1
+    width: 100%
+    max-width: 470px
+    +centera(x)
+    font-size: 29px
+    font-weight: bold
+    text-align: center
+    color: $white
+    margin-bottom: 10px
+  p
+    font-size: 16px
+    line-height: 1.63
+    text-align: center
+    color: $white
+    width: 100%
+    max-width: 550px
+    +centera(x)
+    margin-bottom: 20px
+  .btn
+    +centera(x)
+  &__img
+    position: absolute
+    bottom: -180px
+  #scene1
+    z-index: 9
+    div
+      left: 355px !important
+      top: 45px !important
+  #scene2
+    div
+      left: 545px !important
+      top: 20px !important

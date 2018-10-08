@@ -287,14 +287,14 @@
 
 
 =centera($axis)
-  @if $axis == both
+  @if $axis == center
     +vcenter
-  @else if $axis == h
-    position: absolute
+  @else if $axis == x
+    position: relative
     left: 50%
     transform: translateX(-50%)
-  @else if $axis == v
-    position: absolute
+  @else if $axis == y
+    position: relative
     top: 50%
     transform: translateY(-50%)
 

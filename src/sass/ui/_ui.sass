@@ -1,23 +1,28 @@
 html
 body
-  font-family: 'IBM Plex Serif', serif
+  font-family: 'Open Sans', sans-serif
   font-size: 18px
   box-sizing: border-box
   position: relative
 .container
   width: 100% !important
-  max-width: 1165px
+  max-width: 950px
   box-sizing: border-box
-  +r(1200)
-    padding: 0 15px
+  &-two
+    width: 100% !important
+    max-width: 880px
+    box-sizing: border-box
+    margin: 0 auto
 a
   text-decoration: none
-  transition: all 0.3s
+  +tr
 input[type="submit"]
   appearance: none
   -webkit-appearance: none
 textarea
   resize: none
+.flex
+  display: flex
 
 
 +r(767)
@@ -31,3 +36,35 @@ textarea
 		display: none !important
 
 
+.btn
+  border-radius: 32px
+  font-size: 16px
+  font-weight: 600
+  line-height: 2
+  color: $white
+  height: 45px
+  width: 190px
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  +tr
+  &-primary
+    background-color: $black-two
+    border: 1px solid $black-two
+    &:hover
+      background: $white
+      color: $black-two
+    &-min
+      background-color: $black-two
+      border: 1px solid $black-two
+      width: 95px
+      height: 25px
+      font-size: 12px
+      &:hover
+        background: $white
+        color: $black-two
+  &-secondary
+    border: solid 2px $white
+    &:hover
+      color: $black-two
+      background: $white

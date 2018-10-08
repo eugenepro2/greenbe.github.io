@@ -1,0 +1,68 @@
+.home-description
+  padding-top: 80px
+  h3
+    font-size: 16px
+    font-weight: 600
+    color: $black-two
+  p
+    font-size: 16px
+    font-weight: 300
+    line-height: 1.63
+    color: $black-two
+    margin: 15px 0
+  #description
+    left: 100px
+  #description1
+    left: 50px
+    top: -50px
+    z-index: 9
+  #description2
+    top: -70px
+  #description3
+    left: 20px
+    top: -80px
+    z-index: 9
+  #description4
+    top: -40px
+  .swiper
+    &-pagination
+      display: flex
+      justify-content: space-between
+      border-bottom: solid 3px $white-four
+      width: 100%
+      position: static
+      span
+        width: 100%
+        height: auto
+        +center
+        opacity: 1
+        background: none
+        position: relative
+        &:before
+          font-size: 22px
+          font-weight: 600
+          text-align: center
+          color: $black-two
+          padding: 25px 0
+          font-family: 'Open Sans', sans-serif
+        &:first-child
+          &:before
+            content: 'Utility'
+        &:nth-child(2)
+          &:before
+            content: 'Government'
+        &:last-child
+          &:before
+            content: 'Workplace'
+        &.swiper-pagination-bullet-active
+          &:after
+            content: ''
+            position: absolute
+            bottom: -3px
+            height: 3px
+            width: 100%
+            background: $bright-light-blue
+    &-description
+      padding-top: 100px
+      height: 580px
+      

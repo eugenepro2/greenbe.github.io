@@ -1,31 +1,75 @@
 .header
-  .menu-open
-    position: absolute
-    left: 20px
-    top: 65px
-    width: 30px
-    height: 30px
-    display: none
-    z-index: 99
-    +r(1100)
-      display: block
-    +r(767)
-      top: 55%
-      transform: translate(0, -50%)
-    span
-      width: 30px
-      height: 2px
-      margin-top: 10px
-      background: $white
-      display: block
-      &:before, &:after
-        content: ''
-        width: 30px
-        height: 2px
-        background: $white
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 9
+  padding: 20px 0 0
+  // .menu-open
+  //   position: absolute
+  //   left: 20px
+  //   top: 65px
+  //   width: 30px
+  //   height: 30px
+  //   display: none
+  //   z-index: 99
+  //   +r(1100)
+  //     display: block
+  //   +r(767)
+  //     top: 55%
+  //     transform: translate(0, -50%)
+  //   span
+  //     width: 30px
+  //     height: 2px
+  //     margin-top: 10px
+  //     background: $white
+  //     display: block
+  //     &:before, &:after
+  //       content: ''
+  //       width: 30px
+  //       height: 2px
+  //       background: $white
+  //       position: absolute
+  //       left: 0
+  //     &:before
+  //       top: 0
+  //     &:after
+  //       bottom: 8px
+  &__logo
+  ul
+    +center
+    justify-content: space-between
+    position: relative
+    a
+      font-size: 16px
+      font-weight: 600
+      color: $white
+      padding-bottom: 10px
+      border-bottom: 2px solid transparent
+      &:hover
+        border-bottom: solid 2px #33ccff
+    li
+      position: relative
+      .none
+        visibility: hidden
+        opacity: 0
         position: absolute
-        left: 0
-      &:before
-        top: 0
-      &:after
-        bottom: 8px
+        top: 33px
+        background: $white
+        +center-column
+        padding: 15px 20px
+        align-items: flex-start
+        border-top: solid 2px #33ccff
+        transition: all 0.4s
+        a
+          font-size: 16px
+          font-weight: normal
+          color: $brownish-grey
+          padding: 0
+          border-bottom: none
+          &:hover
+            border-bottom: none
+      &:hover
+        .none
+          visibility: visible
+          opacity: 1
