@@ -37,3 +37,14 @@ description3.friction(0, 0.2);
 var description4 = $('#description4').get(0);
 var description4 = new Parallax(description4);
 description4.friction(0, 0.5);
+
+
+
+//video
+var video = $('#video').get(0);
+var video = new Parallax(video);
+video.friction(0, 0.2);
+
+var video1 = $('#video1').get(0);
+var video1 = new Parallax(video1);
+video1.friction(0, 0.5);
