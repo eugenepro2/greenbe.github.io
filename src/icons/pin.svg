@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="25px" viewBox="0 0 21 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Location icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="GreenBe-marketing-site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Customer-page-1" transform="translate(-279.000000, -289.000000)" fill="#333333" fill-rule="nonzero">
+            <g id="Header">
+                <path d="M289.5,314 C282.5,308.241741 279,303.422069 279,299.540986 C279,293.71936 283.70101,289 289.5,289 C295.29899,289 300,293.71936 300,299.540986 C300,303.422069 296.5,308.241741 289.5,314 Z M289.443107,301.096774 C291.217744,301.096774 292.656371,299.652531 292.656371,297.870968 C292.656371,296.089404 291.217744,294.645161 289.443107,294.645161 C287.668471,294.645161 286.229844,296.089404 286.229844,297.870968 C286.229844,299.652531 287.668471,301.096774 289.443107,301.096774 Z" id="Location-icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>

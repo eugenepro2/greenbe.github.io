@@ -7,6 +7,17 @@
   padding: 15px 0 0
   +tr
   z-index: 10
+  &.custom
+    position: fixed
+    background: $white
+    img:first-child
+      display: none
+    img.scroll
+      display: block
+    a
+      color: $black-two
+    ul.none
+      box-shadow: 2px 2px 24px 0 rgba(0, 0, 0, 0.2)
   &.scroll
     position: fixed
     background: $white

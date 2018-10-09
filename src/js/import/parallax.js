@@ -1,50 +1,72 @@
-import Parallax from 'parallax-js'
+import ScrollMagic from 'scrollmagic'
+import 'animation.gsap';
+import 'debug.addIndicators';
+import {TweenMax} from "gsap";
+
+
+//scrollmagic
+
+
 
 //intro
-var scene = $('#scene').get(0);
-var parallaxInstance = new Parallax(scene);
-parallaxInstance.friction(0, 0.2);
+  // init controller
+  var intro = new ScrollMagic.Controller();
+  var textFields = ["#scene", "#scene1", "#scene2"]; 
+  // build tween
+  var tween = TweenMax.staggerFrom(textFields, 0.5, {y: '80'}, 0.1);
 
-var scene1 = $('#scene1').get(0);
-var parallaxInstance1 = new Parallax(scene1);
-parallaxInstance1.friction(0, 0.5);
-
-var scene2 = $('#scene2').get(0);
-var parallaxInstance2 = new Parallax(scene2);
-parallaxInstance2.friction(0, 0.9);
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    duration: "100%"
+  })
+  .setTween(tween)
+  .addTo(intro);
 
 
 //description
-//slide-1
-var description = $('#description').get(0);
-var description = new Parallax(description);
-description.friction(0, 0.2);
-
-//slide-2
-var description1 = $('#description1').get(0);
-var description1 = new Parallax(description1);
-description1.friction(0, 0.2);
-
-var description2 = $('#description2').get(0);
-var description2 = new Parallax(description2);
-description2.friction(0, 0.5);
-
-//slide-3
-var description3 = $('#description3').get(0);
-var description3 = new Parallax(description3);
-description3.friction(0, 0.2);
-
-var description4 = $('#description4').get(0);
-var description4 = new Parallax(description4);
-description4.friction(0, 0.5);
+  //img-1
+    // init controller
+    var description = new ScrollMagic.Controller();
+    // build tween
+    var descriptionBlock1 = ["#description", "#description1", "#description3"]; 
+    var tweenDescription = TweenMax.staggerFrom(descriptionBlock1, 0.5, {y: '90'});
+  
+    // build scene and set duration to window height
+    new ScrollMagic.Scene({
+      triggerElement: ".home-description",
+      duration: "120%"
+    })
+    .setTween(tweenDescription)
+    .addTo(description);
 
 
+  //img-2
+    // init controller
+    var description2 = new ScrollMagic.Controller();
+    // build tween
+    var descriptionBlock2 = ["#description2", "#description4"]; 
+    var tweenDescription2 = TweenMax.staggerFrom(descriptionBlock2, 0.5, {y: '-90'});
+  
+    // build scene and set duration to window height
+    new ScrollMagic.Scene({
+      triggerElement: ".home-description",
+      duration: "120%"
+    })
+    .setTween(tweenDescription2)
+    .addTo(description2);
 
 //video
-var video = $('#video').get(0);
-var video = new Parallax(video);
-video.friction(0, 0.2);
+  // init controller
+  var video = new ScrollMagic.Controller();
+  // build tween
+  var videoBlock = ["#video", "#video1"]; 
+  var tweenVideo = TweenMax.staggerFrom(videoBlock, 0.5, {y: '-70'}, 0.1);
 
-var video1 = $('#video1').get(0);
-var video1 = new Parallax(video1);
-video1.friction(0, 0.5);
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".home-solutions .btn.btn-primary",
+    duration: "100%"
+  })
+  .setTween(tweenVideo)
+  // .addIndicators()
+  .addTo(video);
