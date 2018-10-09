@@ -7,8 +7,8 @@ import {TweenMax} from "gsap";
 //scrollmagic
 
 
-
 //intro
+if($('#scene').length) {
   // init controller
   var intro = new ScrollMagic.Controller();
   var textFields = ["#scene", "#scene1", "#scene2"]; 
@@ -21,9 +21,11 @@ import {TweenMax} from "gsap";
   })
   .setTween(tween)
   .addTo(intro);
+}
 
 
 //description
+if($('#description').length) {
   //img-1
     // init controller
     var description = new ScrollMagic.Controller();
@@ -39,7 +41,6 @@ import {TweenMax} from "gsap";
     .setTween(tweenDescription)
     .addTo(description);
 
-
   //img-2
     // init controller
     var description2 = new ScrollMagic.Controller();
@@ -54,8 +55,9 @@ import {TweenMax} from "gsap";
     })
     .setTween(tweenDescription2)
     .addTo(description2);
-
+}
 //video
+if($('#video').length) {
   // init controller
   var video = new ScrollMagic.Controller();
   // build tween
@@ -68,5 +70,37 @@ import {TweenMax} from "gsap";
     duration: "100%"
   })
   .setTween(tweenVideo)
-  // .addIndicators()
   .addTo(video);
+}
+
+//feature
+if($('#feature1').length) {
+  // init controller
+  var feature = new ScrollMagic.Controller();
+  // build tween
+  var featureBlock = ["#feature1"]; 
+  var tweenFeature = TweenMax.staggerFrom(featureBlock, 0.01, {y: '-70'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    duration: "100%"
+  })
+  .setTween(tweenFeature)
+  .addTo(feature);
+  
+
+
+  // init controller
+  var feature1 = new ScrollMagic.Controller();
+  // build tween
+  var featureBlock1 = ["#feature2"]; 
+  var tweenFeature1 = TweenMax.staggerFrom(featureBlock1, 0.01, {y: '70'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    duration: "100%"
+  })
+  .setTween(tweenFeature1)
+  // .addIndicators()
+  .addTo(feature1);
+}

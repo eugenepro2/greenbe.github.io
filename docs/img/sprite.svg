@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-people" viewBox="0 0 37 26">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-apple" viewBox="0 0 30 30">
+    <title>
+        Rectangle 1 + Imported Layers
+    </title>
+    <g fill-rule="evenodd">
+        <path d="M7.148.714A6.43 6.43 0 0 0 .714 7.148v15.704a6.43 6.43 0 0 0 6.434 6.434h15.704a6.43 6.43 0 0 0 6.434-6.434V7.148A6.43 6.43 0 0 0 22.852.714H7.148z" stroke-width="1.429"/>
+        <path d="M18.413 10.35c1.946 0 3.19 1.882 3.19 1.882s-1.898 1.03-1.898 3.266c0 2.655 2.384 3.427 2.384 3.427s-1.882 4.466-3.995 4.466c-1.188 0-1.267-.684-2.846-.684-1.372 0-1.834.684-2.879.684-1.993 0-4.569-4.353-4.569-7.893 0-3.676 2.608-5.149 4.242-5.149 1.436 0 2.034.845 3.19.845.973 0 1.738-.845 3.181-.845zM18.08 6.6c.286 1.802-1.348 4.031-3.302 3.959C14.49 8.264 16.596 6.72 18.08 6.6z"/>
+    </g>
+</symbol><symbol id="icon-gp" viewBox="0 0 30 30">
+    <title>
+        Rectangle 1 + google play
+    </title>
+    <g fill-rule="evenodd">
+        <path d="M7.148.714A6.43 6.43 0 0 0 .714 7.148v15.704a6.43 6.43 0 0 0 6.434 6.434h15.704a6.43 6.43 0 0 0 6.434-6.434V7.148A6.43 6.43 0 0 0 22.852.714H7.148z" stroke-width="1.429"/>
+        <path d="M9.514 21.735c-.232-.063-.384-.297-.384-.659V9.128c0-.335.128-.561.331-.643l5.787 6.658-5.734 6.592zm.796-.253l6.966-4.006-1.697-1.952-5.269 5.958zm7.014-8.725l-6.869-3.95 5.134 5.944 1.735-1.994zm.466.268l2.69 1.547c.51.293.515.766 0 1.061l-2.758 1.587-1.8-2.084 1.868-2.111z"/>
+    </g>
+</symbol><symbol id="icon-people" viewBox="0 0 37 26">
     <title>
         Group
     </title>
@@ -14,7 +30,7 @@
     </g>
 </symbol><symbol id="icon-phone" viewBox="0 0 25 28">
     <title>
-        Devices icon
+        Device icon
     </title>
     <g fill-rule="nonzero">
         <g transform="translate(0 3)">

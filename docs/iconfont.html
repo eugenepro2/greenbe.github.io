@@ -93,14 +93,20 @@
       -moz-osx-font-smoothing: grayscale;
     }
     
-    .icon-people:before {
+    .icon-apple:before {
       content: "\EA01";
     }
-    .icon-phone:before {
+    .icon-gp:before {
       content: "\EA02";
     }
-    .icon-pin:before {
+    .icon-people:before {
       content: "\EA03";
+    }
+    .icon-phone:before {
+      content: "\EA04";
+    }
+    .icon-pin:before {
+      content: "\EA05";
     }
   </style>
 </head>
@@ -115,8 +121,24 @@
   <ul class="icons-list">
     
     <li class="icon-box">
-      <input class="icon-class-name autoselect" type="text" value=".icon-people" readonly>
+      <input class="icon-class-name autoselect" type="text" value=".icon-apple" readonly>
       <input class="icon-unicode autoselect" type="text" value="\EA01" readonly>
+      <div class="icon-container">
+        <i class="icon icon-apple"></i>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-gp" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA02" readonly>
+      <div class="icon-container">
+        <i class="icon icon-gp"></i>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-people" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA03" readonly>
       <div class="icon-container">
         <i class="icon icon-people"></i>
       </div>
@@ -124,7 +146,7 @@
     
     <li class="icon-box">
       <input class="icon-class-name autoselect" type="text" value=".icon-phone" readonly>
-      <input class="icon-unicode autoselect" type="text" value="\EA02" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA04" readonly>
       <div class="icon-container">
         <i class="icon icon-phone"></i>
       </div>
@@ -132,7 +154,7 @@
     
     <li class="icon-box">
       <input class="icon-class-name autoselect" type="text" value=".icon-pin" readonly>
-      <input class="icon-unicode autoselect" type="text" value="\EA03" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA05" readonly>
       <div class="icon-container">
         <i class="icon icon-pin"></i>
       </div>

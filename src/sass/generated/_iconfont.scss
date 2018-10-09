@@ -9,9 +9,11 @@
   font-style: normal;
 }
 
-$icon-people: "\EA01";
-$icon-phone: "\EA02";
-$icon-pin: "\EA03";
+$icon-apple: "\EA01";
+$icon-gp: "\EA02";
+$icon-people: "\EA03";
+$icon-phone: "\EA04";
+$icon-pin: "\EA05";
 
 
 %icon {
@@ -30,6 +32,8 @@ $icon-pin: "\EA03";
   display: inline-block;
 }
 
+.icon-apple:before { content: $icon-apple; }
+.icon-gp:before { content: $icon-gp; }
 .icon-people:before { content: $icon-people; }
 .icon-phone:before { content: $icon-phone; }
 .icon-pin:before { content: $icon-pin; }

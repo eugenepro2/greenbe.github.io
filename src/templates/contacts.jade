@@ -1,0 +1,37 @@
+---
+title: Get started
+header: custom
+footer: footer_none
+---
+extends layouts/_layout
+block content
+  .contacts
+    .contacts__img
+      .row
+        .col-xs-5
+          .contacts__img__block
+            img(src="img/contacts__img.png", alt="")
+    .container
+      .row
+        .col-xs-6
+        .col-xs-6
+          .contacts__title
+            h2 Get started
+            p Let us know how we can help and someone from our team will be in touch within 24 business hours.
+          form.from
+            .form__input
+              p Your name
+              input(type="text" name="name" placeholder="First and last name")
+            .form__input
+              p Phone
+              input(type="tel" name="phone" placeholder="0412 345 678")
+            .form__input
+              p Email address
+              input(type="email" name="email" placeholder="name@company.com")
+            .form__input
+              p Company
+              input(type="text" name="company" placeholder="Your company")
+            .form__input
+              p How can we help?
+              textarea(name="comments" placeholder="Add message")
+            input(type="submit" value="Contact us").btn.btn-primary
