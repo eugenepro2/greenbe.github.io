@@ -58,11 +58,49 @@
           color: $black-two
         span
           font-weight: 300
-  &__rewards
+  &__text
     padding: 140px 0
     p
       margin-bottom: 30px
     &__img
       img
         position: relative
-        top: -50px
+    &__btn
+      width: 100%
+      margin-top: 60px
+      +center-y
+      img
+        margin-right: 40px
+  &__administrator
+    padding: 125px 0 90px
+    background-color: $white-three
+    &__img
+      margin-bottom: 40px
+    p
+      padding: 0px 0 20px
+  &__workplaces
+    padding: 100px 0
+    &__title
+      h3
+        margin-bottom: 90px
+        text-align: center
+    .home-solutions__block
+      h3
+        margin-bottom: 10px
+
+
+.government
+  .feature__app__img
+    img
+      &:first-child
+        top: 50px
+        z-index: 9
+      &:last-child
+        top: -50px !important
+        left: -60px !important
+  .feature__app__download__text
+    padding-left: 3px
+    padding-top: 10px
+  .feature__app__download__icon
+    i
+      font-size: 20px !important

@@ -14,6 +14,7 @@ $icon-gp: "\EA02";
 $icon-people: "\EA03";
 $icon-phone: "\EA04";
 $icon-pin: "\EA05";
+$icon-play: "\EA06";
 
 
 %icon {
@@ -37,3 +38,4 @@ $icon-pin: "\EA05";
 .icon-people:before { content: $icon-people; }
 .icon-phone:before { content: $icon-phone; }
 .icon-pin:before { content: $icon-pin; }
+.icon-play:before { content: $icon-play; }

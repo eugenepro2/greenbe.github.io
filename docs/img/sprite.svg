@@ -47,4 +47,12 @@
         Location icon
     </title>
     <path d="M10.5 25C3.5 19.242 0 14.422 0 10.541 0 4.719 4.701 0 10.5 0S21 4.72 21 10.541c0 3.881-3.5 8.7-10.5 14.459zm-.057-12.903a3.22 3.22 0 0 0 3.213-3.226 3.22 3.22 0 0 0-3.213-3.226A3.22 3.22 0 0 0 7.23 8.871a3.22 3.22 0 0 0 3.213 3.226z" fill-rule="nonzero"/>
+</symbol><symbol id="icon-play" viewBox="0 0 14 14">
+    <title>
+        Group 4
+    </title>
+    <g transform="translate(1 1)" fill-rule="nonzero">
+        <path d="M9 6.5L4 10V3z"/>
+        <circle cx="6" cy="6" r="6"/>
+    </g>
 </symbol></svg>

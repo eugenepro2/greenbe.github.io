@@ -24,6 +24,8 @@ if($('#scene').length) {
 }
 
 
+
+
 //description
 if($('#description').length) {
   //img-1
@@ -56,6 +58,11 @@ if($('#description').length) {
     .setTween(tweenDescription2)
     .addTo(description2);
 }
+
+
+
+
+
 //video
 if($('#video').length) {
   // init controller
@@ -72,6 +79,10 @@ if($('#video').length) {
   .setTween(tweenVideo)
   .addTo(video);
 }
+
+
+
+
 
 //feature
 if($('#feature1').length) {
@@ -101,6 +112,89 @@ if($('#feature1').length) {
     duration: "100%"
   })
   .setTween(tweenFeature1)
-  // .addIndicators()
   .addTo(feature1);
+}
+
+if($('#feature3').length) {
+  // init controller
+  var appGovernment = new ScrollMagic.Controller();
+  // build tween
+  var appGovernmenteBlock = ["#feature3"]; 
+  var tweenAppGovernment = TweenMax.staggerFrom(appGovernmenteBlock, 0.01, {y: '-70'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".feature__app--parallax",
+    duration: "100%"
+  })
+  .setTween(tweenAppGovernment)
+  .addTo(appGovernment);
+  
+
+
+  // init controller
+  var appGovernment = new ScrollMagic.Controller();
+  // build tween
+  var appGovernmentBlock1 = ["#feature4"]; 
+  var tweenAppGovernment = TweenMax.staggerFrom(appGovernmentBlock1, 0.01, {y: '70'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".feature__app--parallax",
+    duration: "100%"
+  })
+  .setTween(tweenAppGovernment)
+  .addTo(appGovernment);
+}
+
+
+if($('#feature5').length) {
+  // init controller
+  var feature2 = new ScrollMagic.Controller();
+  // build tween
+  var featureBlock2 = ["#feature5"]; 
+  var tweenFeature2 = TweenMax.staggerFrom(featureBlock2, 0.01, {y: '90'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".feature__text-1",
+    duration: "100%"
+  })
+  .setTween(tweenFeature2)
+  .addTo(feature2);
+}
+
+
+if($('#feature6').length) {
+  // init controller
+  var feature3 = new ScrollMagic.Controller();
+  // build tween
+  var featureBlock3 = ["#feature6"]; 
+  var tweenFeature3 = TweenMax.staggerFrom(featureBlock3, 0.01, {y: '90'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".feature__text-2",
+    duration: "100%"
+  })
+  .setTween(tweenFeature3)
+  .addTo(feature3);
+}
+
+
+if($('#feature7').length) {
+  // init controller
+  var feature4 = new ScrollMagic.Controller();
+  // build tween
+  var featureBlock4 = ["#feature7"]; 
+  var tweenFeature4 = TweenMax.staggerFrom(featureBlock4, 0.01, {y: '90'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".feature__administrator",
+    duration: "100%"
+  })
+  .setTween(tweenFeature4)
+  // .addIndicators()
+  .addTo(feature4);
 }
