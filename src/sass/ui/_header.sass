@@ -7,6 +7,31 @@
   padding: 15px 0 0
   +tr
   z-index: 10
+  .menu-open
+    width: 20px
+    height: 20px
+    z-index: 99
+    display: block
+    top: 5px
+    position: relative
+    left: 100%
+    transform: translate(-100%)
+    span
+      width: 20px
+      height: 2px
+      background: $white
+      display: block
+      &:before, &:after
+        content: ''
+        width: 20px
+        height: 2px
+        background: $white
+        position: absolute
+        left: 0
+      &:before
+        top: 7px
+      &:after
+        bottom: 4px
   &.custom
     position: fixed
     background: $white
