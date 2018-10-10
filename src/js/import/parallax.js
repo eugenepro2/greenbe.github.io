@@ -17,6 +17,7 @@ if($('#scene').length) {
 
   // build scene and set duration to window height
   new ScrollMagic.Scene({
+    triggerElement: ".intro .btn",
     duration: "100%"
   })
   .setTween(tween)

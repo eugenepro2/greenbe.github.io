@@ -4,6 +4,8 @@
   height: 680px
   padding-top: 150px
   position: relative
+  +r(767)
+    height: 740px
   h1
     width: 100%
     max-width: 470px
@@ -18,21 +20,39 @@
     line-height: 1.63
     text-align: center
     color: $white
+    font-weight: normal
     width: 100%
     max-width: 550px
     +centera(x)
     margin-bottom: 20px
+    a
+      color: $white
+      +r(767)
+        font-weight: bold
   .btn
     +centera(x)
   &__img
     position: relative
     width: 100%
+    +r(767)
+      +center
+    img
+      +r(767)
+        width: 200px
   #scene1
     z-index: 9
     position: absolute
     top: 80px
     left: 360px
+    +r(767)
+      left: 25px
+      position: relative
+      top: 40px
   #scene2
     position: absolute
     top: 60px
     right: 160px
+    +r(767)
+      left: -20px
+      position: relative
+      top: 0

@@ -3,10 +3,11 @@
   top: 0
   left: 0
   width: 100%
-  z-index: 9
+  z-index: 22
   padding: 15px 0 0
   +tr
-  z-index: 10
+  +r(767)
+    padding: 15px 0
   .menu-open
     width: 20px
     height: 20px
@@ -21,6 +22,7 @@
       height: 2px
       background: $white
       display: block
+      transition: all 0.5s
       &:before, &:after
         content: ''
         width: 20px
@@ -28,13 +30,44 @@
         background: $white
         position: absolute
         left: 0
+        transition: all 0.5s
       &:before
         top: 7px
       &:after
         bottom: 4px
+    &.active
+      span
+        width: 0
+        background: transparent !important
+        &:before
+          top: 7px
+          transform: rotate(-225deg)
+        &:after
+          top: 7px
+          before: auto
+          transform: rotate(225deg)
+  &.active
+    position: fixed
+    box-shadow: none !important
+    .menu-open
+      span
+        background: $black-two
+        &:before, &:after
+          background: $black-two
+    img:first-child
+      display: none
+    img.scroll
+      display: block
   &.custom
     position: fixed
     background: $white
+    +r(767)
+      box-shadow: 2px 2px 14px 0 rgba(0, 0, 0, 0.2)
+    .menu-open
+      span
+        background: $black-two
+        &:before, &:after
+          background: $black-two
     img:first-child
       display: none
     img.scroll
@@ -46,7 +79,12 @@
   &.scroll
     position: fixed
     background: $white
-    box-shadow: 2px 2px 24px 0 rgba(0, 0, 0, 0.2)
+    box-shadow: 2px 2px 14px 0 rgba(0, 0, 0, 0.2)
+    .menu-open
+      span
+        background: $black-two
+        &:before, &:after
+          background: $black-two
     img:first-child
       display: none
     img.scroll

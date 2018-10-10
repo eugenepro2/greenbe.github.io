@@ -1,36 +1,62 @@
 .home-description
   padding-top: 80px
   border-bottom: solid 1px $white-four
+  +r(767)
+    padding: 70px 0
   h3
     font-size: 16px
     font-weight: 600
     color: $black-two
+    +r(767)
+      padding: 0 30px
   p
     font-size: 16px
     font-weight: 300
     line-height: 1.63
     color: $black-two
     margin: 15px 0
+    +r(767)
+      padding: 0 30px
+  .btn
+    +r(767)
+      margin-left: 30px
+  &__img
+    +r(767)
+      display: flex
+      img
+        height: 360px
   #description
     left: 100px
     position: relative
     top: -90px
+    +r(767)
+      left: 50px
+      width: 250px
   #description1
     position: relative
     left: 50px
     top: -50px
     z-index: 9
+    +r(767)
+      left: 20px
   #description2
     position: relative
     top: -10px
+    +r(767)
+      left: -20px
   #description3
     position: relative
     left: 20px
     top: -80px
     z-index: 9
+    +r(767)
+      left: 10px
   #description4
     position: relative
     top: 10px
+    +r(767)
+      left: -20px
+      top: -40px
   .swiper
     &-pagination
       display: flex
@@ -52,6 +78,8 @@
           color: $black-two
           padding: 25px 0
           font-family: 'Open Sans', sans-serif
+          +r(767)
+            font-size: 16px
         &:first-child
           &:before
             content: 'Utility'
@@ -72,4 +100,6 @@
     &-description
       padding-top: 100px
       height: 580px
+      +r(767)
+        height: auto
       

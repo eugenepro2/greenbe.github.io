@@ -2,8 +2,6 @@ import '../lib/selectize.min.js';
 // import '../lib/maskedinput.js';
 import modal from 'jquery-modal';
 
-//select
-// $('select').selectize();
 
 
 //header scroll
@@ -22,3 +20,18 @@ $('[rel="modal:open"]').on('click', function(event) {
   });
   return false;
 });
+
+//menu open
+$('.menu-open').on('click', function() {
+  $(this).toggleClass('active');
+  $('.header').toggleClass('active');
+  $('.menu').fadeToggle();
+  $('body').toggleClass('active');
+});
+//menu slideDown
+$('.menu__block__nav a').on('click', function(event){
+  if($(this).next().hasClass('none')){
+    event.preventDefault()
+    $(this).next('.none').slideToggle()
+  }
+}); 
