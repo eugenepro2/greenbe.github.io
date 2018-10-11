@@ -10,9 +10,12 @@ var swiper = new Swiper('.swiper-description', {
     clickable: true,
   },
   autoplay: {
-    delay: 3500,
+    delay: 4500,
     disableOnInteraction: false,
   },
+  effect: 'slide',
+  speed: 800,
+  loop: true,
   // breakpoints: {
   //   1024: {
   //     slidesPerView: 1,

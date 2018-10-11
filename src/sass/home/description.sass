@@ -58,6 +58,8 @@
       left: -20px
       top: -40px
   .swiper
+    &-wrapper
+      transition-timing-function: cubic-bezier(0.67, 0.01, 0.23, 1) !important
     &-pagination
       display: flex
       justify-content: space-between
@@ -73,9 +75,9 @@
         position: relative
         &:before
           font-size: 22px
-          font-weight: 600
+          font-weight: normal
           text-align: center
-          color: $black-two
+          color: $pinkish-grey-two
           padding: 25px 0
           font-family: 'Open Sans', sans-serif
           +r(767)
@@ -90,6 +92,8 @@
           &:before
             content: 'Workplace'
         &.swiper-pagination-bullet-active
+          &:before
+            color: $black-two
           &:after
             content: ''
             position: absolute
