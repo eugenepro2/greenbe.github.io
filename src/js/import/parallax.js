@@ -48,6 +48,63 @@ if($('#description').length) {
 
 
 
+//productCard
+if($('.product-triger').length) {
+  // init controller
+  var productCard = new ScrollMagic.Controller();
+  // build tween
+  var productCardBlock = [".home-solutions__block"]; 
+  var tweenProductCard = TweenMax.staggerFrom(productCardBlock, 0.01, {y: '110'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".product-triger",
+    duration: "300%"
+  })
+  .setTween(tweenProductCard)
+  // .addIndicators()
+  .addTo(productCard);
+}
+
+
+//customerSolutions
+if($('.customer-solutions').length) {
+  // init controller
+  var customerSolutions = new ScrollMagic.Controller();
+  // build tween
+  var customerSolutionsBlock = [".product-triger-block"]; 
+  var tweenCustomerSolutions = TweenMax.staggerFrom(customerSolutionsBlock, 0.01, {y: '110'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".product-triger",
+    duration: "200%"
+  })
+  .setTween(tweenCustomerSolutions)
+  // .addIndicators()
+  .addTo(customerSolutions);
+}
+
+
+
+//key
+if($('.customer-project__key').length) {
+  // init controller
+  var productCard = new ScrollMagic.Controller();
+  // build tween
+  var productCardBlock = [".customer-project__key__block"]; 
+  var tweenProductCard = TweenMax.staggerFrom(productCardBlock, 0.01, {y: '80'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".customer-project__key",
+    duration: "200%"
+  })
+  .setTween(tweenProductCard)
+  // .addIndicators()
+  .addTo(productCard);
+}
+
 
 //video
 if($('#video').length) {

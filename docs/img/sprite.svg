@@ -16,7 +16,7 @@
     </g>
 </symbol><symbol id="icon-people" viewBox="0 0 37 26">
     <title>
-        Group
+        User icon
     </title>
     <g fill-rule="nonzero">
         <g transform="translate(15 4)">
@@ -24,22 +24,8 @@
             <circle cx="11.5" cy="5.5" r="5.5"/>
         </g>
         <g>
-            <path d="M7 13h13a7 7 0 0 1 7 7v2H0v-2a7 7 0 0 1 7-7z"/>
-            <ellipse cx="14" cy="5.5" rx="7" ry="5.5"/>
-        </g>
-    </g>
-</symbol><symbol id="icon-phone" viewBox="0 0 25 28">
-    <title>
-        Device icon
-    </title>
-    <g fill-rule="nonzero">
-        <g transform="translate(0 3)">
-            <rect width="15" height="25" rx="2"/>
-            <path d="M2 3h11v19H2z"/>
-        </g>
-        <g transform="translate(10)">
-            <rect width="15" height="25" rx="2"/>
-            <path d="M2 3h11v19H2z"/>
+            <path d="M7 13h8a7 7 0 0 1 7 7v2H0v-2a7 7 0 0 1 7-7z"/>
+            <circle cx="11.5" cy="5.5" r="5.5"/>
         </g>
     </g>
 </symbol><symbol id="icon-pin" viewBox="0 0 21 25">
@@ -54,5 +40,19 @@
     <g transform="translate(1 1)" fill-rule="nonzero">
         <path d="M9 6.5L4 10V3z"/>
         <circle cx="6" cy="6" r="6"/>
+    </g>
+</symbol><symbol id="icon-tel" viewBox="0 0 25 28">
+    <title>
+        Device icon
+    </title>
+    <g fill-rule="nonzero">
+        <g transform="translate(0 3)">
+            <rect width="15" height="25" rx="2"/>
+            <path d="M2 3h11v19H2z"/>
+        </g>
+        <g transform="translate(10)">
+            <rect width="15" height="25" rx="2"/>
+            <path d="M2 3h11v19H2z"/>
+        </g>
     </g>
 </symbol></svg>

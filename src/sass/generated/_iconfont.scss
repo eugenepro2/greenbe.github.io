@@ -12,9 +12,9 @@
 $icon-apple: "\EA01";
 $icon-gp: "\EA02";
 $icon-people: "\EA03";
-$icon-phone: "\EA04";
-$icon-pin: "\EA05";
-$icon-play: "\EA06";
+$icon-pin: "\EA04";
+$icon-play: "\EA05";
+$icon-tel: "\EA06";
 
 
 %icon {
@@ -36,6 +36,6 @@ $icon-play: "\EA06";
 .icon-apple:before { content: $icon-apple; }
 .icon-gp:before { content: $icon-gp; }
 .icon-people:before { content: $icon-people; }
-.icon-phone:before { content: $icon-phone; }
 .icon-pin:before { content: $icon-pin; }
 .icon-play:before { content: $icon-play; }
+.icon-tel:before { content: $icon-tel; }
