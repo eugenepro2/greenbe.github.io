@@ -35,6 +35,9 @@
       padding-bottom: 80px
     &__img
       display: flex
+      margin-left: -50px
+      +r(767)
+        margin-left: 0
       img
         position: relative
         transform: scale(1.2)
@@ -96,7 +99,7 @@
     &__img
       img
         position: relative
-        transform: scale(1.2)
+        transform: scale(1.15)
         top: -40px
         width: 510px
         +r(767)
@@ -112,6 +115,7 @@
   &__administrator
     padding: 125px 0 90px
     background-color: $white-three
+    margin-top: 70px
     +r(767)
       padding: 70px 0
     &__img
@@ -143,6 +147,17 @@
         margin-bottom: 10px
 
 
+
+
+.img-left
+  margin-left: -50px
+  +r(767)
+    margin-left: 0
+.img-right
+  position: relative
+  right: -30px
+  +r(767)
+    right: 0
 .government
   .feature__app__img
     #feature3, #feature4
@@ -174,6 +189,10 @@
   .feature__app--parallax
     padding: 80px 0
     .feature__app__img
+      position: relative
+      right: -60px
+      +r(767)
+        right: 0
       img
         &:first-child
           +r(767)
