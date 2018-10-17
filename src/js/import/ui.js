@@ -32,6 +32,7 @@ $('.menu-open').on('click', function() {
 $('.menu__block__nav a').on('click', function(event){
   if($(this).next().hasClass('none')){
     event.preventDefault()
+    $(this).toggleClass('active')
     $(this).next('.none').slideToggle()
   }
 }); 
