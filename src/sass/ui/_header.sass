@@ -4,7 +4,7 @@
   left: 0
   width: 100%
   z-index: 22
-  padding: 35px 0 20px
+  padding: 25px 0 10px
   +tr
   +r(767)
     padding: 15px 0
@@ -54,10 +54,11 @@
         background: $black-two
         &:before, &:after
           background: $black-two
-    img:first-child
-      display: none
-    img.scroll
-      display: block
+    .header__logo
+      img:first-child
+        display: none
+      img.scroll
+        display: block
   &.custom
     position: fixed
     background: $white
@@ -68,10 +69,11 @@
         background: $black-two
         &:before, &:after
           background: $black-two
-    img:first-child
-      display: none
-    img.scroll
-      display: block
+    .header__logo
+      img:first-child
+        display: none
+      img.scroll
+        display: block
     a
       color: $black-two
     ul.none
@@ -85,15 +87,18 @@
         background: $black-two
         &:before, &:after
           background: $black-two
-    img:first-child
-      display: none
-    img.scroll
-      display: block
+    .header__logo
+      img:first-child
+        display: none
+      img.scroll
+        display: block
     a
       color: $black-two
     ul.none
       box-shadow: 2px 2px 24px 0 rgba(0, 0, 0, 0.2)
   &__logo
+    img
+      height: 26px
     img.scroll
       display: none
   ul
@@ -124,17 +129,24 @@
         border-top: solid 2px #33ccff
         transition: all 0.4s
         a
-          font-size: 14px
-          font-weight: normal
-          color: $brownish-grey
           padding: 0
           border-bottom: none
           padding-bottom: 25px
           display: flex
           align-items: center
-          i
+          +tr
+          span
+            font-size: 14px
+            font-weight: 400
+            color: $brownish-grey
+            display: block
+            +tr
+          &:hover
+            span
+              font-weight: 600
+          img
             margin-right: 20px
-            font-size: 18px
+            width: 18px
           &:hover
             border-bottom: none
       &:hover
