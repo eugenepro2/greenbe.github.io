@@ -10,7 +10,7 @@ var swiper = new Swiper('.swiper-description', {
     clickable: true,
   },
   autoplay: {
-    delay: 4500,
+    delay: 8000,
     disableOnInteraction: false,
   },
   effect: 'slide',
