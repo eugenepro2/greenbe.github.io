@@ -54,7 +54,7 @@ if($('.product-triger').length) {
   var productCard = new ScrollMagic.Controller();
   // build tween
   var productCardBlock = [".home-solutions__block"]; 
-  var tweenProductCard = TweenMax.staggerFrom(productCardBlock, 0.01, {y: '110'});
+  var tweenProductCard = TweenMax.staggerFrom(productCardBlock, 0.01, {y: '90'});
 
   // build scene and set duration to window height
   new ScrollMagic.Scene({
