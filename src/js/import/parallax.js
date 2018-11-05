@@ -7,6 +7,27 @@ import {TweenMax} from "gsap";
 //scrollmagic
 
 
+
+//productCard
+if($('.product-triger').length) {
+  $('.home-solutions__block').css({'top': '0'})
+  // init controller
+  var productCard = new ScrollMagic.Controller();
+  // build tween
+  var productCardBlock = [".home-solutions__block"]; 
+  var tweenProductCard = TweenMax.staggerFrom(productCardBlock, 0.01, {y: '90'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".product-triger",
+    duration: "300%"
+  })
+  .setTween(tweenProductCard)
+  // .addIndicators()
+  .addTo(productCard);
+}
+
+
 //intro
 if($('#scene').length) {
   // init controller
@@ -46,25 +67,6 @@ if($('#description').length) {
 }
 
 
-
-
-//productCard
-if($('.product-triger').length) {
-  // init controller
-  var productCard = new ScrollMagic.Controller();
-  // build tween
-  var productCardBlock = [".home-solutions__block"]; 
-  var tweenProductCard = TweenMax.staggerFrom(productCardBlock, 0.01, {y: '90'});
-
-  // build scene and set duration to window height
-  new ScrollMagic.Scene({
-    triggerElement: ".product-triger",
-    duration: "300%"
-  })
-  .setTween(tweenProductCard)
-  // .addIndicators()
-  .addTo(productCard);
-}
 
 
 //customerSolutions
