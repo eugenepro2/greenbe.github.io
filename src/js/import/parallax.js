@@ -10,7 +10,6 @@ import {TweenMax} from "gsap";
 
 //productCard
 if($('.product-triger').length) {
-  $('.home-solutions__block').css({'top': '0'})
   // init controller
   var productCard = new ScrollMagic.Controller();
   // build tween
@@ -25,6 +24,7 @@ if($('.product-triger').length) {
   .setTween(tweenProductCard)
   // .addIndicators()
   .addTo(productCard);
+  $('.home-solutions__block').css({'top': '0'})
 }
 
 
