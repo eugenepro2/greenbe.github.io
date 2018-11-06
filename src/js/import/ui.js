@@ -30,9 +30,23 @@ $('.menu-open').on('click', function() {
 });
 //menu slideDown
 $('.menu__block__nav a').on('click', function(event){
+  if($(this).hasClass('active')){
+    $(this).removeClass('active');
+  } else {
+    $('.menu__block__nav a').removeClass('active');
+    $(this).addClass('active');
+  }
   if($(this).next().hasClass('none')){
     event.preventDefault()
-    $(this).toggleClass('active')
     $(this).next('.none').slideToggle()
   }
 }); 
+
+
+//якорь
+$(".btn-scroll").on("click", function (event) {
+  event.preventDefault();
+  var id  = $(this).attr('href'),
+    top = $(id).offset().top - 150;
+  $('body,html').animate({scrollTop: top}, 1500);
+});

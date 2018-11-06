@@ -118,20 +118,27 @@
     margin-top: 130px
     +r(767)
       padding: 70px 0
+      margin-top: 0
     p
       margin-bottom: 60px
+      +r(767)
+        margin-bottom: 20px
     &__img
       margin-bottom: 60px
+      +r(767)
+        margin-bottom: 20px
+        overflow: hidden
       img
         transform: scale(1.2)
         top: -50px
         position: relative
         width: 750px
         +r(767)
-          width: 100%
+          width: 110%
           top: -50px
+          left: 50%
           position: relative
-          transform: scale(1)
+          transform: scale(1) translate(-50%)
     p
       padding: 0px 0 20px
   &__workplaces
